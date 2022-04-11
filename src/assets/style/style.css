@@ -1,0 +1,106 @@
+@import url(basic.css);
+
+.container{
+    display: grid;
+    width: 96%;
+    margin:0 auto;
+    gap:1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted{
+    color: var(--color-info-dark);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+aside{
+    height: 100vh;
+    
+}
+
+aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    gap: 0.rem
+}
+
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .close{
+    display: none;
+}
+
+aside .sidebar{
+    background: white;
+    display:flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top:3rem;
+}
+
+aside h3{
+    font-weight: 500;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left:2rem;
+    gap:1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all300ms ease;
+}
+
+/* aside .sidebar a:hover{
+    color: var(--color-primary);
+} */
+
+aside .sidebar a span{
+    color: var(--color-info-dark);
+    font-size: 1.6rem;
+}
+
+aside .sidebar a h3{
+    color: var(--color-info-dark);
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
